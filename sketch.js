@@ -13,7 +13,9 @@ function draw() {
   background(100)
   text('Moving is ' + moving, 10, 70)
 //Position + 1 - causes it to move by one each time from original position
+if (moving) {
 position = position + 1
+}
 rect(position, 0, 10, 10)
 text('My name is ' + name, 10, 30)
 }
