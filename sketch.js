@@ -1,3 +1,4 @@
+var name = 'Laura Jones'
 //Background size - canvas
 // var position - initial position on the canvas
 var position = 100
@@ -6,9 +7,11 @@ function setup () {
 }
 //Background (colour) and shape (including size/dimensions)
 function draw() {
+  //Add space before speech mark - adds space when it displays it (so number isn't right next to it)
   console.log('The position is' + position)
   background(100)
 //Position + 1 - causes it to move by one each time from original position
 position = position + 1
 rect(position, 0, 10, 10)
+text('My name is ' + name, 10, 30)
 }
